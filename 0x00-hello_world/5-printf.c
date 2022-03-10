@@ -1,6 +1,6 @@
 #include <stdio.h>
-/** This func return a value 
- * 0
+/** main- display a simple string 
+ *Return : 0
  */
 int main(void)
 {
