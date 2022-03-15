@@ -11,7 +11,7 @@ int main(void)
 
 	j = 1;
 	k = 2;
-	while (i <= 50)
+	while (i < 50)
 	{
 		if (j == 20365011074)
 		{
@@ -27,5 +27,6 @@ int main(void)
 		i++;
 	}
 
+	printf("\n");
 	return (0);
 }
