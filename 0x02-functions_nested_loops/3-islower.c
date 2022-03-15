@@ -7,5 +7,5 @@
  */
 int _islower(int charac)
 {
-	return (charac => 'a' && charac <= 'z');
+	return (charac >= 'a' && charac <= 'z');
 }
