@@ -1,5 +1,5 @@
 #ifndef PUTCHAR
 #define PUTCHAR
 
-void print_putchar(void);
+void _putchar(void);
 #endif
