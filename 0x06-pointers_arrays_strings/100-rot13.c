@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-  * rot13 - ...
+  * rot13 - 
   * @s: ...
   *
   * Return: ...
@@ -13,7 +13,7 @@ char *rot13(char *s)
 
 	while (s[a])
 	{
-		while ((s[a] >= 'a' && s[a] <= 'z') || (s[a] >= 'A' && s[a] <= 'Z'))
+		while ((s[a] >= 'a' && s[a] <= 'z') || (s[a] >= 'A' && s[a] <= 'Z')
 		{
 			if ((s[a] > 'm' && s[a] <= 'z') || (s[a] > 'M' && s[a] <= 'Z'))
 			{
@@ -30,4 +30,3 @@ char *rot13(char *s)
 
 	return (s);
 }
-
