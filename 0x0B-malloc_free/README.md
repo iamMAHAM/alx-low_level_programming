@@ -17,5 +17,11 @@
         <p>
         Write a function that returns a pointer to a 2 dimensional array of integers.
         </p>
+    <li><strong>4. It's not bragging if you can back it up
+</strong></li><br>
+        <p>
+        Write a function that frees a 2 dimensional grid previously created by your alloc_grid function.
+        </p>
+    
 </ul>
 
