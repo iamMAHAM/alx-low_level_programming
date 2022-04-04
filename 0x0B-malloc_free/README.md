@@ -6,6 +6,10 @@
 </p>
 <li><strong>1. The woman who has no imagination has no wings
 </strong></li><br>
-<p>Write a function that creates an array of chars, and initializes it with a specific char.
+<p>Write a function that returns a pointer to a newly allocated space in memory, which contains a copy of the string given as a parameter.
+</p>
+<li><strong>2. He who is not courageous enough to take risks will accomplish nothing in life
+</strong></li><br>
+<p>Write a function that concatenates two strings.
 </p>
 </ul>
