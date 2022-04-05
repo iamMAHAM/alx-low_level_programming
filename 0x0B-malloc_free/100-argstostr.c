@@ -13,9 +13,6 @@ char *argstostr(int ac, char **av)
 	int i = 0, j, longitud = 0, l, k;
 	char *string;
 
-	if (ac == 0 || av == '\0')
-	return (NULL);
-
 	for (i = 0; i < ac; i++)
 	{
 		j = 0;
