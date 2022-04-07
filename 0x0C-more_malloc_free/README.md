@@ -12,4 +12,10 @@
     <p>
         Write a function that concatenates two strings.
     </p>
+    <li>
+        <strong>2. _calloc</strong>
+    </li>
+    <p>
+    Write a function that allocates memory for an array, using malloc.
+    </p>
 </ul>
