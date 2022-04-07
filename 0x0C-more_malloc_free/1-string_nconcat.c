@@ -41,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 	}
 
-	while (j <= tmp_length)
+	while (j < tmp_length)
 	{
 		ptr[i] = s2[j];
 		i++;
