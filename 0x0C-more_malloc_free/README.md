@@ -36,4 +36,10 @@
     <p>
         Write a function that reallocates a memory block using malloc and free
     </p>
+    <li>
+        <strong>5. We must accept finite disappointment, but never lose infinite hope</strong>
+    </li>
+    <p>
+    Write a program that multiplies two positive numbers.
+    </p>
 </ul>
