@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * array_range - allocates memory for an array
- * @nmemb: number of element
- * @size: type of element
+ * array_range - generate an array
+ * @min: minimum
+ * @max: maximum
  * Return: pointer
  */
 int *array_range(int min, int max)
@@ -15,12 +15,12 @@ int *array_range(int min, int max)
 
 	if (min > max)
 		return (NULL);
-	
+
 	total_numbers = max - min + 1;
 	ptr = malloc(sizeof(int) * total_numbers);
 	if (ptr == NULL)
 		return (NULL);
-	
+
 	for (; i <= max; i++)
 	{
 		ptr[i] = min + i;
