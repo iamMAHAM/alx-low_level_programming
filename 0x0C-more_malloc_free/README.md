@@ -16,6 +16,12 @@
         <strong>2. _calloc</strong>
     </li>
     <p>
-    Write a function that allocates memory for an array, using malloc.
+        Write a function that allocates memory for an array, using malloc.
+    </p>
+    <li>
+        <strong>3. array_range</strong>
+    </li>
+    <p>
+        Write a function that creates an array of integers.
     </p>
 </ul>
