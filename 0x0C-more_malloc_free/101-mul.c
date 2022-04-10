@@ -1,5 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
-
 /**
  * error - prints error
  * @status: the status code
@@ -7,12 +8,13 @@
  */
 void error(int status)
 {
-	_putchar('E');
-	_putchar('r');
-	_putchar('r');
-	_putchar('o');
-	_putchar('r');
-	_putchar('\n');
+	char str[] = "Error";
+	int i = 0;
+
+	for (; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
 	exit(status);
 }
 
@@ -22,20 +24,21 @@ void error(int status)
  * @argv: args
  * Return: int
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	unsigned long mul;
 	int i, j;
+
 	if (argc != 3)
-	{ 
-		error(98); 
+	{
+		error(98);
 	}
 	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			if (argv[i][j] > 57 || argv[i][j] < 48)
-			{  
+			{
 				error(98);
 			}
 		}
