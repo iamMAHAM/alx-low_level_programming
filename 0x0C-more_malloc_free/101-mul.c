@@ -15,6 +15,7 @@ void error(int status)
 	{
 		_putchar(str[i]);
 	}
+	_putchar('\n');
 	exit(status);
 }
 
@@ -46,5 +47,6 @@ int main(int argc, char **argv)
 	}
 	mul = atol(argv[1]) * atol(argv[2]);
 	printf("%lu\n", mul);
+	_putchar('\n');
 	return (0);
 }
