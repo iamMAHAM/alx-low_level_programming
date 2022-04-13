@@ -3,7 +3,6 @@
 #include <stdlib.h>
 /**
  * main - An entry point
- * 
  * @argc: number of arugument
  * @argv: an array of char
  * Return: a result
