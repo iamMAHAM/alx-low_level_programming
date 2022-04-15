@@ -4,10 +4,9 @@
 
 /**
  * print_numbers - print number separated by separator
- * 
  * @separator: the separator
  * @n: the number of args
- * @...: unknows args 
+ * @...: unknows args
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
