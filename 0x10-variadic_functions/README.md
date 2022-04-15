@@ -38,8 +38,8 @@ Write a function that prints anything.
 * * i: integer
 * * f: float
 * * s: char * (if the string is NULL, print (nil) instead
-* any other char should be ignored
-* see example
+* * any other char should be ignored
+* * see example
 * You are not allowed to use for, goto, ternary operator, else, do ... while
 * You can use a maximum of
 * * 2 while loops
