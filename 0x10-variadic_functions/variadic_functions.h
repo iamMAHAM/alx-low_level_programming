@@ -10,6 +10,6 @@ void print_all(const char * const format, ...);
 typedef struct print
 {
 	char *str;
-	void (*T_func)(va_list)
+	void (*T_func)(va_list);
 } t_print;
 #endif
