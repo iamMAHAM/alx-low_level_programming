@@ -43,3 +43,22 @@ Write a function that adds a new node at the end of a list_t list.
 Write a function that frees a list_t list.
 
 * Prototype: void free_list(list_t *head);
+
+## Advanced tasks
+
+### 5. The Hare and the Tortoise
+
+<img src="harse.png">
+
+Write a function that prints **You're beat! and yet, you must allow,\nI bore my house upon my back!\n** before the main function is executed.
+
+* You are allowed to use the printf function
+
+### 6. Real programmers can write assembly code in any language
+
+Write a 64-bit program in assembly that prints Hello, Holberton, followed by a new line.
+
+* You are only allowed to use the printf function
+* You are not allowed to use interrupts
+* Your program will be compiled using nasm and gcc
+
