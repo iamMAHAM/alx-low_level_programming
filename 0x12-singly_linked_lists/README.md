@@ -1,6 +1,6 @@
 # 0x12. C - Singly linked lists
 
-<img src="giphy-3.gif">
+<img src="giphy-3.gif" width=100%>
 
 ## Mandatory tasks
 
