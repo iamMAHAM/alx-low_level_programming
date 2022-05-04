@@ -29,8 +29,9 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 
-	length  = strlen(text_content);
-	text_content[length + 1] = '\0';
+	
+	for (length = 0; text_content[length] != 0; length++)
+		;
 	status = write(fd, text_content, length);
 
 	if (status == -1) /*permission error or other*/
