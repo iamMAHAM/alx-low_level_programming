@@ -17,7 +17,7 @@ int create_file(const char *filename, char *text_content)
 {
 	int fd, status, length;
 
-	if (filename == NULL)
+	if (!filename) /*filename == NULL*/
 		return (-1);
 
 
@@ -28,11 +28,15 @@ int create_file(const char *filename, char *text_content)
 	
 	length = strlen(text_content);
 	printf("%d", length);
+
+	if (!text_content)
+		return (1);
+
 	status = write(fd, text_content, length);
 
 	if (status == -1)
 		return (-1);
 	
-	// close(fd);
+	close(fd);
 	return (1);
 }
