@@ -2,7 +2,7 @@
 
 /**
  * get_dnodeint_at_index - returns the nth current of a linked list.
- * @head: the head. 
+ * @head: the head.
  * @index: index.
  * Return: nth current, if the current doesn't exist, returns NULL.
  **/
