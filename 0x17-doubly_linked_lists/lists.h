@@ -19,14 +19,7 @@ typedef struct dlistint_s
 	struct dlistint_s *next;
 } dlistint_t;
 
-typedef enum
-{
-	false,
-	true
-} bool;
-
 /*All prototypes*/
-int is_empty_dlist(dlistint_t **head);
 size_t print_dlistint(const dlistint_t *h);
 size_t dlistint_len(const dlistint_t *h);
 dlistint_t *add_dnodeint(dlistint_t **head, const int n);
