@@ -47,7 +47,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
  *
  * @key: the key
  * @value: the value
- * @return hash_node_t* 
+ * Return: hash_node_t*
  */
 hash_node_t *new_node_create(const char *key, const char *value)
 {
