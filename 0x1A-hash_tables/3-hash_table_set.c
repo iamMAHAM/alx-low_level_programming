@@ -12,7 +12,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned int idx;
 	hash_node_t *tmp;
-	char *tmp_value;
+	char *d_value;
 
 	if (!ht || !key || !value || !strlen(key) || !ht->array
 			|| !ht->size)
@@ -23,12 +23,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (strcmp(tmp->key, key) == 0)
 		{
-			tmp_value = strdup(value);
-			if (!tmp_value)
+			d_value = strdup(value);
+			if (!d_value)
 				return (0);
 
 			free(tmp->value);
-			tmp->value = tmp_value;
+			tmp->value = d_value;
 			return (1);
 		}
 	}
@@ -51,30 +51,29 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
  */
 hash_node_t *new_node_create(const char *key, const char *value)
 {
-	char *tmp_key, *tmp_value;
+	char *d_key, *d_value;
 	hash_node_t *new_node;
 
-	tmp_key = strdup(key);
-	if (!tmp_key)
+	d_key = strdup(key);
+	if (!d_key)
 		return (NULL);
 
-	tmp_value = strdup(value);
-	if (!tmp_value)
+	d_value = strdup(value);
+	if (!d_value)
 	{
-		free(tmp_key);
+		free(d_key);
 		return (NULL);
 	}
 
 	new_node = calloc(1, sizeof(hash_node_t));
 	if (!new_node)
 	{
-		free(tmp_key), free(tmp_value);
+		free(d_key), free(d_value);
 		return (NULL);
 	}
 
 	new_node->next = NULL;
-	new_node->key = tmp_key;
-	new_node->value = tmp_value;
+	new_node->key = d_key;
+	new_node->value = d_value;
 	return (new_node);
 }
-
